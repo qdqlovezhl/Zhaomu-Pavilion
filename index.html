@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纪念活动板报</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header>
+        <h1>永恒的纪念</h1>
+    </header>
+
+    <section class="photo-wall">
+        <h2>记忆相册</h2>
+        <div class="gallery">
+            <a href="images/photo1.jpg" data-lightbox="memory" data-title="纪念时刻1">
+                <img src="images/thumb1.jpg" alt="纪念照片1">
+            </a>
+            <a href="images/photo2.jpg" data-lightbox="memory" data-title="纪念时刻2">
+                <img src="images/thumb2.jpg" alt="纪念照片2">
+            </a>
+            <!-- 可添加更多图片 -->
+        </div>
+    </section>
+
+    <section class="audio-section">
+        <h2>怀念之声</h2>
+        <div class="audio-player">
+            <audio id="memorial-audio" controls>
+                <source src="audio/song1.mp3" type="audio/mpeg">
+                您的浏览器不支持音频元素
+            </audio>
+            <div class="playlist">
+                <button class="play-btn" data-src="audio/song1.mp3">追忆曲1</button>
+                <button class="play-btn" data-src="audio/song2.mp3">追忆曲2</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
